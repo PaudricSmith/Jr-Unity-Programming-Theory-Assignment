@@ -1,6 +1,8 @@
 using UnityEngine;
 
 
+
+// INHERITANCE
 public class Pistol : Gun
 {
 
@@ -23,18 +25,19 @@ public class Pistol : Gun
     }
 
 
+    // POLYMORPHISM
     public override void Fire()
     {
         // Implement the firing mechanism for the pistol
     }
 
-
+    // POLYMORPHISM
     public override string GetDescription()
     {
         return $"Ideal for close-range combat. Accuracy: {accuracy * 100}%.";
     }
 
-
+    // POLYMORPHISM
     public override void Reload()
     {
         // Implement the reload mechanism for the pistol

@@ -13,6 +13,7 @@ public abstract class Gun : MonoBehaviour, UIMainScene.IUIInfoContent
     [SerializeField] protected float accuracy;
     [SerializeField] protected int damage;
 
+    // ENCAPSULATION
     public string GunName => gunName;
     public string AmmoType => ammoType;
 
