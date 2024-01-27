@@ -6,6 +6,8 @@ public class UserController : MonoBehaviour
 {
 
     [SerializeField] private Camera gameCamera;
+    [SerializeField] private AudioSource selectAudioSource;
+    [SerializeField] private AudioClip selectAudioClip;
 
 
 
@@ -30,6 +32,8 @@ public class UserController : MonoBehaviour
             {
                 UIMainScene.Instance.ActivatePopupWindow();
                 UIMainScene.Instance.SetNewInfoContent(gun);
+
+                selectAudioSource.PlayOneShot(selectAudioClip);
             }
             else
             {
